@@ -35,7 +35,9 @@ var array = [objectAtticus, objectJem, objectBoo, objectScout];
 
 $(document).ready(function(){
   $("#container").on('click', '.employeeButton', function(){
-      console.log($(this).siblings().text());
+      $(this).parent().remove();
+
+      //console.log($(this).siblings().text());
       // for(var i = 0; i < array.length; i++){
       //   console.log(array[i].name, array[i].STI, array[i].adjustedCompensation, array[i].bonus);
       // }
